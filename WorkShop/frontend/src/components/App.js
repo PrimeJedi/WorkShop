@@ -6,9 +6,7 @@ import Header from './layout/Header';
 class App extends Component{
     render(){
         return (
-            <Fragment>
-                <Header />
-            </Fragment>
+            <div>App</div>
         )
     }
 }
