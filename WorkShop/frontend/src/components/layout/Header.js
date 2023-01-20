@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import SignUp from './SignUp'
+import {Link} from 'react-router-dom'
 
 export class Header extends Component {
   render() {
@@ -13,20 +15,20 @@ export class Header extends Component {
             </a>
     
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Корзина</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Избранное</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Заказы</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Стать продавцом</a></li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search"/>
             </form>
-
+            
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+                <a class="btn btn-outline-primary" href  ="http://127.0.0.1:8000/Вход/"     >Зарегистрироваться</a>
+
+                {/* <a class="btn btn-outline-primary"href  = "{% url './frontend/templates/frontend/SignUpPage.html' %}">Зарегистрироваться</a> */}
             </div>
              {/* Кнопка с сылкой на профиль */}
         {/* <div class="dropdown text-end">
