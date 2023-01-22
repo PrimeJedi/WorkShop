@@ -7,3 +7,15 @@
         "transform-class-properties"
     ]
 }
+
+// {
+//     "presets": ["@babel/preset-react"],
+//     "venv": {
+//       "development": {
+//         "presets": [["@babel/preset-react", { "development": true }]]
+//       }
+//     },
+//     "plugins": [
+//         "transform-class-properties"
+//     ]
+//   }
